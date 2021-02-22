@@ -40,6 +40,9 @@ public class ATMSystem {
     
     public static void main(String[] args) {
         ATMSystem atm = new ATMSystem();
-        atm.menu();
+        while (true) {            
+            atm.menu();
+        }
+        
     }
 }
