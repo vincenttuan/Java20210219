@@ -7,8 +7,8 @@ public class ATMSystem {
     
     public void menu() {
         System.out.println("-----------------");
-        System.out.println("1. 存款");
-        System.out.println("2. 提款");
+        System.out.println("1. 提款");
+        System.out.println("2. 存款");
         System.out.println("3. 查詢");
         System.out.println("0. 離開");
         System.out.println("-----------------");
@@ -42,6 +42,8 @@ public class ATMSystem {
         ATMSystem atm = new ATMSystem();
         while (true) {            
             atm.menu();
+            System.out.println("按下 Enter 後繼續");
+            new Scanner(System.in).nextLine();
         }
         
     }
