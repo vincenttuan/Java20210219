@@ -12,7 +12,7 @@ public class Account {
     
     // 提款的方法
     public void withdrawal(int x) {
-        System.out.printf("提款 $ %d ", x);
+        System.out.printf("提款 $%d ", x);
         if(x <= money) {
             System.out.println("成功");
             money -= x;
