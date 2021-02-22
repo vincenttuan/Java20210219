@@ -1,14 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.ocp.day03.foo;
 
-/**
- *
- * @author teacher
- */
+import com.ocp.day03.bar.A;
+
 public class D {
-    
+    void i_want_money() {
+        A a = new A();
+        // 因為 money 的存取權限是 protected
+        // D 必須要透過 extends 才可以存取
+        //System.out.println(a.money);
+    }
 }
