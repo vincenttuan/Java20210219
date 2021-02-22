@@ -8,5 +8,7 @@ public class ATM {
         act.printMoney();
         act.withdrawal(50);
         act.printMoney();
+        act.withdrawal(-50);
+        act.printMoney();
     }
 }
