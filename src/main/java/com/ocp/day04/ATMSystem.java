@@ -13,7 +13,7 @@ public class ATMSystem {
         System.out.println("0. 離開");
         System.out.println("-----------------");
         Scanner sc = new Scanner(System.in);
-        System.out.print("請選擇: ");
+        System.out.println("請選擇: ");
         int n = sc.nextInt();
         service(n);
     }
@@ -21,12 +21,12 @@ public class ATMSystem {
         Scanner sc = new Scanner(System.in);
         switch(n) {
             case 1: // 提款
-                System.out.print("請輸入提款金額: ");
+                System.out.println("請輸入提款金額: ");
                 int withdrawalMoney = sc.nextInt();
                 account.withdrawal(withdrawalMoney);
                 break;
             case 2: // 存款
-                System.out.print("請輸入存款金額: ");
+                System.out.println("請輸入存款金額: ");
                 int depositMoney = sc.nextInt();
                 account.deposit(depositMoney);
                 break;
