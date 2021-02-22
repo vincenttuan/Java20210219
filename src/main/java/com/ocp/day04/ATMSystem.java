@@ -45,6 +45,5 @@ public class ATMSystem {
             System.out.println("按下 Enter 後繼續");
             new Scanner(System.in).nextLine();
         }
-        
     }
 }
