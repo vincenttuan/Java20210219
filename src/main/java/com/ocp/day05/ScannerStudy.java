@@ -11,7 +11,7 @@ public class ScannerStudy {
         System.out.println(w);
         System.out.println(s);
         System.out.println("請輸入任意字串...");
-        Scanner sc2 = new Scanner(System.in);
+        //Scanner sc2 = new Scanner(System.in);
         //String any = new Scanner(System.in).nextLine();
         //System.out.printf("您所輸入的是: %s\n", any);
         System.out.printf("您所輸入的是: %s\n", new Scanner(System.in).nextLine());
