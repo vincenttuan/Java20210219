@@ -9,11 +9,20 @@ public class ArrayDemo2 {
         System.out.printf("數學: %s\n", Arrays.toString(scores1));
         // 想要知道總分 = ?
         //int sum = scores1[0]+scores1[1]+scores1[2]+scores1[3]+scores1[4]+scores1[5];
-        // Java 7
+        // Java 7 for-loop
         int sum = 0;
         for(int i=0, lens=scores1.length;i<lens;i++) {
             sum += scores1[i];
         }
         System.out.printf("總分: %d\n", sum);
+        // Java 7 for-in(for-each)
+        int sum2 = 0;
+        for(int x:scores1) {
+            sum2 += x;
+        }
+        System.out.printf("總分: %d\n", sum2);
+        
+        // 請計算平均 = ?
+        
     }
 }
