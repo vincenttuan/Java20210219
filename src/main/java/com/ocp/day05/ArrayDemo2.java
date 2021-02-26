@@ -11,7 +11,7 @@ public class ArrayDemo2 {
         //int sum = scores1[0]+scores1[1]+scores1[2]+scores1[3]+scores1[4]+scores1[5];
         // Java 7
         int sum = 0;
-        for(int i=0;i<scores1.length;i++) {
+        for(int i=0, lens=scores1.length;i<lens;i++) {
             sum += scores1[i];
         }
         System.out.printf("總分: %d\n", sum);
