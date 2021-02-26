@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class ArrayDemo2 {
     public static void main(String[] args) {
         // 全班有6個人此次考數學的成績列表
-        int[] scores1 = {80, 90, 90, 100, 40, 50};
+        int[] scores1 = {81, 90, 90, 100, 40, 50};
         System.out.printf("數學: %s\n", Arrays.toString(scores1));
         // 想要知道總分 = ?
         //int sum = scores1[0]+scores1[1]+scores1[2]+scores1[3]+scores1[4]+scores1[5];
@@ -23,6 +23,7 @@ public class ArrayDemo2 {
         System.out.printf("總分: %d\n", sum2);
         
         // 請計算平均 = ?
-        
+        double avg = (double)sum / scores1.length;
+        System.out.printf("平均: %.1f\n", avg);
     }
 }
