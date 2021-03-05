@@ -10,5 +10,12 @@ public class MultiArray {
             System.out.println(Arrays.toString(score));
         }
         // 請算出總分 = ?
+        int sum = 0;
+        for(int[] score : scores) {
+            for(int s : score) {
+                sum += s;
+            }
+        }
+        System.out.println(sum);
     }
 }
