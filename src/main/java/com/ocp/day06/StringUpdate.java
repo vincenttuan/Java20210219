@@ -5,11 +5,15 @@ public class StringUpdate {
         x = x.concat("8");
     }
     public static void updateStringBuilder(StringBuilder y) {
-        y = y.append("8");
+        //y = y.append("8");
+        y.append("8");
     }
     public static void main(String[] args) {
         String x = "Java";
         StringBuilder y = new StringBuilder("Java");
-        
+        updateString(x);
+        updateStringBuilder(y);
+        System.out.println(x);
+        System.out.println(y);
     }
 }
