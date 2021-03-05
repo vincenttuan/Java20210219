@@ -4,6 +4,10 @@ public class StringUpdate {
     public static void updateString(String x) {
         x = x.concat("8");
     }
+    public static String updateString2(String x) {
+        x = x.concat("8");
+        return x;
+    }
     public static void updateStringBuilder(StringBuilder y) {
         //y = y.append("8");
         y.append("8");
@@ -15,5 +19,7 @@ public class StringUpdate {
         updateStringBuilder(y);
         System.out.println(x);
         System.out.println(y);
+        x = updateString2(x);
+        System.out.println(x);
     }
 }
