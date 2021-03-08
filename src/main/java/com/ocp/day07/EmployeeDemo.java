@@ -12,5 +12,18 @@ public class EmployeeDemo {
         System.out.println(e1.getAge());
         System.out.println(e1.getSalary());
         System.out.println(e1);
+        System.out.println(e1.toString());
+        
+        Employee e2 = new Employee();
+        e2.setName("Mary");
+        e2.setLanguage("Python");
+        e2.setAge(28);
+        e2.setSalary(55000);
+        System.out.println(e2.getName());
+        System.out.println(e2.getLanguage());
+        System.out.println(e2.getAge());
+        System.out.println(e2.getSalary());
+        System.out.println(e2);
+        System.out.println(e2.toString());
     }
 }
