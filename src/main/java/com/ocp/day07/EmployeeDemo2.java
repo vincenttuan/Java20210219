@@ -1,5 +1,7 @@
 package com.ocp.day07;
 
+import java.util.stream.Stream;
+
 public class EmployeeDemo2 {
 
     public static void main(String[] args) {
@@ -15,5 +17,9 @@ public class EmployeeDemo2 {
         for(Employee e : employees) {
             System.out.println(e);
         }
+        // java 8 foreach
+        Stream.of(employees).forEach(e -> System.out.println(e));
+        Stream.of(employees).forEach(System.out::println);
+        
     }
 }
