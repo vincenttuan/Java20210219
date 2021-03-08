@@ -5,8 +5,8 @@ public class Employee {
     private String language;
     private int age;
     private int salary;
-    // 建構子
 
+    // 建構子
     public Employee() {
     }
     
@@ -53,5 +53,12 @@ public class Employee {
             this.salary = salary;
         }
     }
+    
+    //  覆寫 toString()
+    @Override
+    public String toString() {
+        return "Employee{" + "name=" + name + ", language=" + language + ", age=" + age + ", salary=" + salary + '}';
+    }
+    
     
 }
