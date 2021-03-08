@@ -3,7 +3,6 @@ package com.ocp.day07;
 public class EmployeeDemo {
     public static void main(String[] args) {
         Employee e1 = new Employee();
-        
         e1.setName("John");
         e1.setLanguage("Java");
         e1.setAge(30);
@@ -12,5 +11,6 @@ public class EmployeeDemo {
         System.out.println(e1.getLanguage());
         System.out.println(e1.getAge());
         System.out.println(e1.getSalary());
+        System.out.println(e1);
     }
 }
