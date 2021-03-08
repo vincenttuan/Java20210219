@@ -5,9 +5,19 @@ public class Employee {
     private String language;
     private int age;
     private int salary;
+    // 建構子
+
+    public Employee() {
+    }
+    
+    public Employee(String name, String language, int age, int salary) {
+        this.name = name;
+        this.language = language;
+        this.age = age;
+        this.salary = salary;
+    }
     
     // 進行屬性封裝(getter/setter)
-
     public String getName() {
         return name;
     }
