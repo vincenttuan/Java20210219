@@ -4,6 +4,10 @@ public class WashMachine {
     private boolean isOpen; // false
     private boolean haveWater; // false
     private int mode; // 預設:0
+    // 建構子
+    public WashMachine(int mode) {
+        this.mode = mode;
+    }
     // 開門
     public void open() {
         System.out.println("開門");
@@ -50,7 +54,7 @@ public class WashMachine {
                 System.out.println("靜置模式");
                 break;
             default:
-                System.out.println("請選擇模式");
+                System.out.println("請選擇模式/模式錯誤");
                 return;
         }
         // 開始洗衣
