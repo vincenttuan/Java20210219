@@ -13,5 +13,6 @@ public class WrapperClassDemo {
         String math = "50";
         System.out.println(chinese + math);
         System.out.println(Integer.parseInt(chinese) + Integer.parseInt(math));
+        System.out.println(Integer.toBinaryString(100));
     }
 }
