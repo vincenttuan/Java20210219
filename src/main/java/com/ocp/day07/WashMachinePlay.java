@@ -6,8 +6,8 @@ public class WashMachinePlay {
         w1.open();
         w1.putClothes();
         w1.close();
-        w1.water();
         w1.play();
+        w1.water();
     }
     
 }
