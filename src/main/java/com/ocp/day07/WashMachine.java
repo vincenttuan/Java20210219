@@ -2,6 +2,7 @@ package com.ocp.day07;
 
 public class WashMachine {
     private boolean isOpen; // false
+    private boolean haveWater; // false
     private int mode; // 預設:0
     // 開門
     public void open() {
@@ -25,12 +26,19 @@ public class WashMachine {
     public void water() {
         if(!isOpen) {
             System.out.println("注水");
+            haveWater = true;
         } else {
             System.out.println("嗶嗶嗶~門沒關");
         }
     }
     // 洗衣
     public void play() {
+        // 確認是否注水 ?
+        if(!haveWater) {
+            System.out.println("請先注水");
+            return;
+        }
+        // 確認洗衣模式
         switch(mode) {
             case 1:
                 System.out.println("柔洗模式");
