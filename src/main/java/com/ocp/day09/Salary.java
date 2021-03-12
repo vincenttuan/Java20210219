@@ -9,7 +9,7 @@ public class Salary {
         this.bonus = bonus;
     }
     
-    public int getSalary() {
+    public int getMoney() {
         int money = Util.add(principalSalary, bonus);
         return money;
     }
