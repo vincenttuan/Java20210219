@@ -6,6 +6,10 @@ public class Father {
         System.out.println("爸爸被建立");
     }
     
+    public Father(int i) {
+        System.out.println("爸爸被建立");
+    }
+    
     public void hobby() {
         System.out.println("Golf");
     }
