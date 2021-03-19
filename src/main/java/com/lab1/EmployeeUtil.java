@@ -27,9 +27,14 @@ public class EmployeeUtil {
             case 0:
                 return new Employee(38000);
             case 1:
-                return new Manager(68000);
+                Manager m = new Manager(68000);
+                m.setBudget(10_0000);
+                return m;
             default:
-                return new Director(88000);
+                Director d = new Director(88000);
+                d.setBudget(50_0000);
+                d.setStockOptions(100_0000);
+                return d;
         }
     }
     
