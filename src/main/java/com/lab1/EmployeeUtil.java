@@ -22,7 +22,7 @@ public class EmployeeUtil {
     }
     // 公差一員
     public Employee getRandomEmployee() {
-        int n = new Random().nextInt(3);
+        int n = new Random().nextInt(3); // 0, 1, 2
         switch(n) {
             case 0:
                 return new Employee(38000);
