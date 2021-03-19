@@ -9,13 +9,17 @@ public class Manager extends Employee {
     }
 
     public Manager(int salary) {
+        setSalary(salary);
     }
 
     public int getBudget() {
-        return 0;
+        return budget;
     }
 
     public void setBudget(int budget) {
+        if(budget > 0) {
+            this.budget = budget;
+        }
     }
 
 }

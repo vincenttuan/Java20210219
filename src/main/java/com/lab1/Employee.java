@@ -9,13 +9,17 @@ public class Employee {
     }
 
     public Employee(int salary) {
+        setSalary(salary);
     }
 
     public int getSalary() {
-        return 0;
+        return salary;
     }
 
     public void setSalary(int salary) {
+        if(salary > 0) {
+            this.salary = salary;
+        }
     }
 
 }
