@@ -1,4 +1,4 @@
-package com.lab1;
+package com.lab.lab1;
 
 
 public class Employee {
