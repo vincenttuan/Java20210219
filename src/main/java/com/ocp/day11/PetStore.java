@@ -9,6 +9,7 @@ public class PetStore {
         Pig pig = new Pig();
         Bird bird = new Bird();
         playSound(dog, pig, bird);
+        goToSleep(dog, pig, bird);
     }
     public static void playSound(Animal... animals) {
         Stream.of(animals).forEach(a -> a.sound());
