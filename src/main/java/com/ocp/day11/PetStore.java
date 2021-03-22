@@ -13,4 +13,7 @@ public class PetStore {
     public static void playSound(Animal... animals) {
         Stream.of(animals).forEach(a -> a.sound());
     }
+    public static void goToSleep(Animal... animals) {
+        Stream.of(animals).forEach(a -> a.sleep());
+    }
 }
