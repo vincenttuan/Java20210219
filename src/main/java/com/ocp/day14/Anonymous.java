@@ -6,6 +6,18 @@ interface Salary {
 
 public class Anonymous {
     public static void main(String[] args) {
+        Salary salary = new Salary(){
+            @Override
+            public int amount() {
+                return 5_0000;
+            }
+        };
         
+        Salary salary2 = new Salary() {
+            @Override
+            public int amount() {
+                return 8_0000;
+            }
+        };
     }
 }
