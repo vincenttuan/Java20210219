@@ -24,10 +24,10 @@ public class Anonymous4 {
         };
         System.out.println(sub2.calc(10, 20));
         // Java 8 Lambda
-        Sub sub3 = (int x, int y) -> {return x + y;};
-        Sub sub4 = (int x, int y) -> x + y; // 省去 return
-        Sub sub5 = (x, y) -> x + y; // 超精簡寫法
-        
+        Sub sub3 = (int x, int y) -> {return x - y;};
+        Sub sub4 = (int x, int y) -> x - y; // 省去 return
+        Sub sub5 = (x, y) -> x - y; // 超精簡寫法
+        System.out.println(sub5.calc(10, 20));
         
     }
 }
