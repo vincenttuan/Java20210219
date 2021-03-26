@@ -2,5 +2,7 @@ package com.ocp.day13;
 
 public interface Animal {
     void move();
-    void eat();
+    default void eat() {
+        System.out.println("吃罐頭食品");
+    }
 }
