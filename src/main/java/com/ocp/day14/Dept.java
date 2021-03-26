@@ -6,6 +6,7 @@ public class Dept { // 部門
         void work() {
             String name = "寫程式";
             System.out.println(name);
+            System.out.println(Dept.this.name);
         }
     }
 }
