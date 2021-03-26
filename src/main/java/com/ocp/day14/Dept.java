@@ -9,4 +9,5 @@ public class Dept { // 部門
             System.out.println(Dept.this.name);
         }
     }
+    
 }
