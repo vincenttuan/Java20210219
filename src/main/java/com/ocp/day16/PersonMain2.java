@@ -1,5 +1,8 @@
 package com.ocp.day16;
 
+import java.util.function.ToDoubleFunction;
+import java.util.stream.Stream;
+
 public class PersonMain2 {
     public static void main(String[] args) {
         Person[][] people = {
@@ -14,5 +17,12 @@ public class PersonMain2 {
             }, // B 班
         };
         // 請印出此5人的BMI資料
+        ToDoubleFunction<Person> getBmi = p -> p.getW() / Math.pow(p.getH()/100, 2);
+        Stream.of(people)
+                .flatMap(p -> Stream.of(p))
+                .mapToDouble(p -> getBmi.applyAsDouble(p))
+                .forEach(System.out::println);
+                
+                
     }
 }
