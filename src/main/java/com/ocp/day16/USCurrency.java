@@ -1,7 +1,6 @@
 package com.ocp.day16;
 
 // PENNY=1, NICLE=5, DIME=10, QUARTER=25
-// USCurrency.PENNY
 public enum USCurrency {
     PENNY(1), NICLE(5), DIME(10), QUARTER(25);
     
