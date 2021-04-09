@@ -14,6 +14,18 @@ public class Person {
         this.w = w;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof Person) {
+            Person p = (Person)obj;
+            if(name.equals(p.name) && h == p.h && w == p.w) {
+                return true;
+            }
+        }
+        return false; 
+    }
+    
+
     public String getName() {
         return name;
     }
