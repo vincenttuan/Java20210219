@@ -18,7 +18,9 @@ public class Person {
     public boolean equals(Object obj) {
         if(obj instanceof Person) {
             Person p = (Person)obj;
-            if(name.equals(p.name) && h == p.h && w == p.w) {
+            if(name.equals(p.name) && 
+               h.doubleValue() == p.h.doubleValue() && 
+               w.doubleValue() == p.w.doubleValue()) {
                 return true;
             }
         }
