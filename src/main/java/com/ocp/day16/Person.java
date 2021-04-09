@@ -37,5 +37,10 @@ public class Person {
     public void setW(Double w) {
         this.w = w;
     }
+
+    @Override
+    public String toString() {
+        return "Person{" + "name=" + name + ", h=" + h + ", w=" + w + '}';
+    }
     
 }
