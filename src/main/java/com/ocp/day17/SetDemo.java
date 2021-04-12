@@ -31,6 +31,12 @@ public class SetDemo {
             System.out.println(next);
         }
         // 只印出科目 ?
-        
+        iter = set.iterator(); // 二次調用
+        while (iter.hasNext()) {
+            Object next = iter.next();
+            if(next instanceof String) {
+                System.out.println(next);
+            }
+        }
     }
 }
