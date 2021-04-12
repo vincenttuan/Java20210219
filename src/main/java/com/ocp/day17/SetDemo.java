@@ -2,11 +2,12 @@ package com.ocp.day17;
 
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 public class SetDemo {
     public static void main(String[] args) {
-        Set set = new HashSet();
+        Set set = new LinkedHashSet();
         set.add("國文");
         set.add(100);
         set.add("英文");
