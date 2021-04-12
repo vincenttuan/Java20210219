@@ -23,5 +23,10 @@ public class SetDemo2 {
         }
         System.out.println(sum);
         // 計算總分 (Java 8)
+        int sum2 = set.stream()
+                .filter(s -> s != null)
+                .mapToInt(s -> s.intValue())
+                .sum();
+        System.out.println(sum2);
     }
 }
