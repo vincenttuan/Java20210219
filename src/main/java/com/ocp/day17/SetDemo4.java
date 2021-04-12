@@ -17,7 +17,11 @@ public class SetDemo4 {
         phones.toArray(s1); // 將 phones 資料複製給 s1
         System.out.println(Arrays.toString(s1));
         // Java 8
-        String[] s2 = phones.stream().toArray(String[]::new);
+        String[] s2 = phones.stream()
+                .toArray(String[]::new);
         System.out.println(Arrays.toString(s2));
+        String[] s3 = phones.stream()
+                .toArray(size -> new String[size]);
+        System.out.println(Arrays.toString(s3));
     }
 }
