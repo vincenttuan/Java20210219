@@ -12,7 +12,7 @@ public class SetDemo2 {
         set.add(90);
         set.add(80);
         set.add(null);
-        // 計算總分
+        // 計算總分 (Java 7)
         Iterator<Integer> iter = set.iterator();
         int sum = 0;
         while (iter.hasNext()) {
@@ -22,5 +22,6 @@ public class SetDemo2 {
             }
         }
         System.out.println(sum);
+        // 計算總分 (Java 8)
     }
 }
