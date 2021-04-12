@@ -49,5 +49,13 @@ public class SetDemo {
             }
         }
         System.out.println(sum);
+        // Java 8
+        int sum2 = set.stream()
+                .filter(s -> s instanceof Integer)
+                //.mapToInt(s -> ((Integer)s).intValue())
+                .mapToInt(s -> (Integer)s)
+                .sum();
+        System.out.println(sum2);
+                
     }
 }
