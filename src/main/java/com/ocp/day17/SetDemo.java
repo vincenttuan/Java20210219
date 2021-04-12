@@ -38,5 +38,16 @@ public class SetDemo {
                 System.out.println(next);
             }
         }
+        // 計算總分 ?
+        // Java 7
+        iter = set.iterator();
+        int sum = 0;
+        while (iter.hasNext()) {
+            Object next = iter.next();
+            if(next instanceof Integer) {
+                sum += (Integer)next;
+            }
+        }
+        System.out.println(sum);
     }
 }
