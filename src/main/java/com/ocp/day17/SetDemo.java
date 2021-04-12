@@ -25,6 +25,12 @@ public class SetDemo {
             Object next = iter.next();
             System.out.println(next);
         }
+        iter = set.iterator(); // 二次調用
+        while (iter.hasNext()) {
+            Object next = iter.next();
+            System.out.println(next);
+        }
+        // 只印出科目 ?
         
     }
 }
