@@ -15,6 +15,6 @@ public class LottoSet {
             lotto.add(n); // 加入到集合
         }
         System.out.println(lotto);
-        
+        System.out.println(lotto.size());
     }
 }
