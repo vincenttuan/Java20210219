@@ -16,5 +16,14 @@ public class LottoSet {
         }
         System.out.println(lotto);
         System.out.println(lotto.size());
+        // 使用 while
+        Set<Integer> lotto2 = new LinkedHashSet<>();
+        while (lotto2.size() < 5) {            
+            int n = r.nextInt(10);
+            System.out.printf("n = %d\n", n);
+            lotto2.add(n); // 加入到集合
+        }
+        System.out.println(lotto2);
+        System.out.println(lotto2.size());
     }
 }
