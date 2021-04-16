@@ -94,10 +94,10 @@ public class LottoJFrame extends javax.swing.JFrame {
         int idx = lotto_box.getSelectedIndex();
         switch(idx) {
             case 0:
-                lotto_label.setText(LottoService.get539().toString().replace(',', ' ').replace('[', ' ').replace(']', ' ').trim());
+                lotto_label.setText(LottoService.get539().toString().replace(",", "").replace("[", "").replace("]", "").trim());
                 break;
             case 1:
-                lotto_label.setText(LottoService.get4Stars().toString().replace(',', ' ').replace('[', ' ').replace(']', ' ').trim());
+                lotto_label.setText(LottoService.get4Stars().toString().replace(",", "").replace("[", "").replace("]", "").trim());
                 break;
         }
     }//GEN-LAST:event_lotto_buttonActionPerformed
