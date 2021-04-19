@@ -12,7 +12,7 @@ return [0, 1]
 public class Homework_TwoSum {
 
     public static void main(String[] args) {
-
+        
     }
 
     public static List<Integer> twoSum(List<Integer> nums, int target) {
