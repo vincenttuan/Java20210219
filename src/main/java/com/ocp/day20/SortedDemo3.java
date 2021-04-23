@@ -1,6 +1,7 @@
 package com.ocp.day20;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import static java.util.stream.Collectors.toList;
 
@@ -21,7 +22,8 @@ public class SortedDemo3 {
         System.out.println(reversedUsers);
         // 請按照分數小大來排序並置入一個新集合中
         List<User> sortedUsers = users.stream()
-                
+                //.sorted(Comparator.comparingInt(u -> u.getScore()))
+                .sorted(Comparator.comparingInt(User::getScore))
                 .collect(toList());
         System.out.println(sortedUsers);
     }
