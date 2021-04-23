@@ -24,6 +24,7 @@ public class SortedDemo3 {
         List<User> sortedUsers = users.stream()
                 //.sorted(Comparator.comparingInt(u -> u.getScore()))
                 .sorted(Comparator.comparingInt(User::getScore))
+                //.sorted(Comparator.comparingInt(User::getScore).reversed())
                 .collect(toList());
         System.out.println(sortedUsers);
     }
