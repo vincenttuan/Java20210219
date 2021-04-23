@@ -18,5 +18,6 @@ public class GroupingDemo2 {
         Map<String, Long> groupingByScore = score.stream()
                 .collect(Collectors.groupingBy(e -> e >= 60?"及格":"不及格", Collectors.counting()));
         System.out.println(groupingByScore);
+        
     }
 }
