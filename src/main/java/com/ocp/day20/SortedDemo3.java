@@ -2,6 +2,7 @@ package com.ocp.day20;
 
 import java.util.Arrays;
 import java.util.List;
+import static java.util.stream.Collectors.toList;
 
 public class SortedDemo3 {
     public static void main(String[] args) {
@@ -14,7 +15,9 @@ public class SortedDemo3 {
         );
         System.out.println(users);
         // 請按照分數大小來排序並置入一個新集合中
-        
+        List<User> sortedUsers = users.stream()
+                
+                .collect(toList());
         
     }
 }
