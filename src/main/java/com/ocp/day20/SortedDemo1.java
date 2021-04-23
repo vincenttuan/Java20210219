@@ -13,13 +13,16 @@ public class SortedDemo1 {
         // 排序(自然排序:小->大)
         Collections.sort(list);
         System.out.println(list);
-        // 排序(自然排序:大->小)
+        // 排序(大->小)
         Collections.sort(list, new Comparator<Integer>(){
             @Override
             public int compare(Integer o1, Integer o2) {
                 return o2 - o1;
             }
         });
+        System.out.println(list);
+        // 排序(小->大)
+        Collections.sort(list, (o1, o2)->o1-o2);
         System.out.println(list);
     }
 }
