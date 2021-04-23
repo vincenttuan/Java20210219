@@ -19,5 +19,10 @@ public class SortedDemo3 {
                 .sorted((u1, u2) -> u2.getScore() - u1.getScore())
                 .collect(toList());
         System.out.println(reversedUsers);
+        // 請按照分數小大來排序並置入一個新集合中
+        List<User> sortedUsers = users.stream()
+                
+                .collect(toList());
+        System.out.println(sortedUsers);
     }
 }
