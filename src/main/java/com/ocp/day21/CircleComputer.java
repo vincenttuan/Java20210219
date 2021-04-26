@@ -12,7 +12,7 @@ public class CircleComputer {
         }
         Scanner sc = new Scanner(System.in);
         System.out.print("請輸入半徑: ");
-        count++;
+        
         try {
             double r = sc.nextDouble();
             double area = Math.pow(r, 2) * Math.PI;
@@ -22,6 +22,9 @@ public class CircleComputer {
             System.out.println("錯誤原因: " + e);
             System.out.println("請重新輸入");
             main(args);
+        } finally {
+            count++;
         }
+        
     }
 }
