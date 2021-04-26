@@ -7,13 +7,16 @@ public class AppleShare {
             submit(n);
         } catch (ArithmeticException e) {
             System.out.println("錯誤原因: " + e.getMessage());
+            System.out.println("錯誤原因: " + e.getLocalizedMessage());
+            System.out.println(e);
+            
         }
         
     }
     
     public static void submit(int n) { // n 人數
         if(n <= 0) {
-            ArithmeticException e = new ArithmeticException(" n <= 0");
+            ArithmeticException e = new ArithmeticException("n <= 0");
             throw e;
         }
         int apple = 10;
