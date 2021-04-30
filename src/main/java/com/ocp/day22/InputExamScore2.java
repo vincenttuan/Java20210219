@@ -2,7 +2,7 @@ package com.ocp.day22;
 
 public class InputExamScore2 {
     public static void main(String[] args) {
-        int score = 90;
+        int score = -90;
         try {
             check(score);
         } catch (ScoreRangeException e) {
