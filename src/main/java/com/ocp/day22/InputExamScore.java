@@ -10,7 +10,6 @@ public class InputExamScore {
                                ", 錯誤原因: " + e.getMessage());
         }
     }
-    
     public static void check(int score) throws Exception {
         // 檢驗參數
         if(score < 0 || score > 100) {
