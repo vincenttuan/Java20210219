@@ -15,5 +15,6 @@ public class RaceMain {
         // 執行緒啟動
         race.start();
         race2.start();
+        race3.start();
     }
 }
