@@ -1,4 +1,4 @@
-package com.ocp.lab24;
+package com.ocp.day24;
 
 public class Race extends Thread {
     @Override

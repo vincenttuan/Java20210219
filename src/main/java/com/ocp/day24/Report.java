@@ -1,4 +1,4 @@
-package com.ocp.lab24;
+package com.ocp.day24;
 
 // 要給執行緒執行的工作任務
 public class Report implements Runnable {
