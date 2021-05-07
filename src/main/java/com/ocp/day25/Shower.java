@@ -8,6 +8,12 @@ class Father extends Thread {
         System.out.println("爸爸請瓦斯工人送瓦斯");
         Worker worker = new Worker();
         worker.start();
+        
+        try {
+            worker.join();
+        } catch (Exception e) {
+        }
+        
         System.out.println("爸爸開始洗澡");
         System.out.println("爸爸洗完澡了");
     }
@@ -16,7 +22,7 @@ class Father extends Thread {
 class Worker extends Thread {
     public void run() {
         System.out.println("瓦斯工人準備送瓦斯");
-        for(int i=1;i<=5;i++) {
+        for(int i=1;i<=10;i++) {
             try {
                 System.out.print(i + "秒鐘 ");
                 Thread.sleep(1000);
