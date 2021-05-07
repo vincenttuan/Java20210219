@@ -13,6 +13,7 @@ public class BingoJFrame extends javax.swing.JFrame {
     private ImageIcon orange     = new ImageIcon(path + "Orange.png");
     private ImageIcon star       = new ImageIcon(path + "Star.png");
     private ImageIcon watermelon = new ImageIcon(path + "Watermelon.png");
+    private ImageIcon[] icons = { apple, bar, bell, luckySeven, mango, orange, star, watermelon };
     
     public BingoJFrame() {
         initComponents();
