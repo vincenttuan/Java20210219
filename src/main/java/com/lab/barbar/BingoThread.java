@@ -21,6 +21,7 @@ public class BingoThread extends Thread {
             } catch (Exception e) {
             }
         }
+        //label.setIcon(icons[1]);
     }
     
 }
