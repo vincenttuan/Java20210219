@@ -17,7 +17,7 @@ public class BingoThread extends Thread {
             int n = r.nextInt(icons.length);
             label.setIcon(icons[n]);
             try {
-                Thread.sleep(100);
+                Thread.sleep(10);
             } catch (Exception e) {
             }
         }
