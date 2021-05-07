@@ -14,10 +14,9 @@ public class LottoMain {
         try {
             System.out.println(task.get());
         } catch (InterruptedException ex) {
-            
         } catch (ExecutionException ex) {
-            
         }
+        
         System.out.println("程式結束");
     }
 }
