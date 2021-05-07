@@ -20,7 +20,8 @@ class Worker extends Thread {
             try {
                 System.out.print(i + "秒鐘 ");
                 Thread.sleep(1000);
-            } catch (Exception e) {
+            } catch (InterruptedException e) {
+                System.out.println("工人發生意外:" + e);
             }
         }
         System.out.println("\n瓦斯工人將瓦斯送達");
