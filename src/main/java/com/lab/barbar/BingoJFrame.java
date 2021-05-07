@@ -5,13 +5,13 @@ import javax.swing.ImageIcon;
 public class BingoJFrame extends javax.swing.JFrame {
     
     private String path = "C:\\Users\\student\\Documents\\NetBeansProjects\\Java20210219\\src\\main\\java\\com\\lab\\barbar\\";
-    private ImageIcon apple = new ImageIcon(path + "Apple.png");
-    private ImageIcon bar = new ImageIcon(path + "Bar.png");
-    private ImageIcon bell = new ImageIcon(path + "Bell.png");
+    private ImageIcon apple      = new ImageIcon(path + "Apple.png");
+    private ImageIcon bar        = new ImageIcon(path + "Bar.png");
+    private ImageIcon bell       = new ImageIcon(path + "Bell.png");
     private ImageIcon luckySeven = new ImageIcon(path + "LuckySeven.png");
-    private ImageIcon mango = new ImageIcon(path + "Mango.png");
-    private ImageIcon orange = new ImageIcon(path + "orange.png");
-    private ImageIcon star = new ImageIcon(path + "Star.png");
+    private ImageIcon mango      = new ImageIcon(path + "Mango.png");
+    private ImageIcon orange     = new ImageIcon(path + "Orange.png");
+    private ImageIcon star       = new ImageIcon(path + "Star.png");
     private ImageIcon watermelon = new ImageIcon(path + "Watermelon.png");
     
     public BingoJFrame() {
