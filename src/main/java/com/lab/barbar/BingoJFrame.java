@@ -1,21 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.lab.barbar;
 
-/**
- *
- * @author teacher
- */
-public class BingoJFrame extends javax.swing.JFrame {
+import javax.swing.ImageIcon;
 
-    /**
-     * Creates new form BingoJFrame
-     */
+public class BingoJFrame extends javax.swing.JFrame {
+    
+    private String path = "C:/Users/student/Documents/NetBeansProjects/Java20210219/src/main/java/com/lab/barbar/";
+    private ImageIcon apple = new ImageIcon(path + "Apple.png");
+    
     public BingoJFrame() {
         initComponents();
+        b1.setIcon(apple);
+        b2.setIcon(apple);
+        b3.setIcon(apple);
     }
 
     /**
