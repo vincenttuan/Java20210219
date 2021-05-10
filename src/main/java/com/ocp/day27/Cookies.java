@@ -6,6 +6,10 @@ public class Cookies {
     public Cookies(int amount) {
         this.amount = amount;
     }
+
+    public int getAmount() {
+        return amount;
+    }
     
     public void put(int n) {
         System.out.printf("主人放第 %d 塊餅乾\n", n);
