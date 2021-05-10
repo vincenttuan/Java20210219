@@ -15,7 +15,7 @@ public class Account {
     }
     
     // 提款方法, amount 表示提款的金額
-    public void withdraw(int amount) {
+    public synchronized void withdraw(int amount) {
         String tname = Thread.currentThread().getName();
         System.out.printf("%s 準備提款 $%d\n", tname, amount);
         // 檢查帳戶餘額
