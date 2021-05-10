@@ -1,6 +1,11 @@
 package com.ocp.day27;
 
 public class Cookies {
+    private int amount;
+
+    public Cookies(int amount) {
+        this.amount = amount;
+    }
     
     public void put(int n) {
         System.out.printf("主人放第 %d 塊餅乾\n", n);
