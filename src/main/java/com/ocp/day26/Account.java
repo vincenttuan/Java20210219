@@ -30,10 +30,10 @@ public class Account {
             // 帳戶餘額 = 目前帳戶餘額 - 提款金額
             balance = currentBalance - amount;
             // 印出交易成功清單
-            System.out.printf("%s 提款 $%d 成功, 帳戶餘額 $d\n", tname, amount, getBalance());
+            System.out.printf("%s 提款 $%d 成功, 帳戶餘額 $%d\n", tname, amount, getBalance());
         } else {
             // 印出交易失敗清單
-            System.out.printf("%s 提款 $%d 失敗(餘額不足), 帳戶餘額 $d\n", tname, amount, getBalance());
+            System.out.printf("%s 提款 $%d 失敗(餘額不足), 帳戶餘額 $%d\n", tname, amount, getBalance());
         }
         
     }
