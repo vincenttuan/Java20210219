@@ -14,6 +14,10 @@ public class Account {
         return balance;
     }
     
+    private void setBalance(int amount) {
+        balance = balance - amount;
+    }
+    
     // 提款方法, amount 表示提款的金額
     public synchronized void withdraw(int amount) {
         String tname = Thread.currentThread().getName();
@@ -28,7 +32,8 @@ public class Account {
             for(int i=0 ; i<Integer.MAX_VALUE ; i++);
             // 變更帳戶餘額
             // 帳戶餘額 = 目前帳戶餘額 - 提款金額
-            balance = currentBalance - amount;
+            //balance = currentBalance - amount;
+            setBalance(amount);
             // 印出交易成功清單
             System.out.printf("%s 提款 $%d 成功, 帳戶餘額 $%d\n", tname, amount, getBalance());
         } else {
