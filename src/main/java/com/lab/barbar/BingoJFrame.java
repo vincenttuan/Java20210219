@@ -38,6 +38,7 @@ public class BingoJFrame extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Bingo");
 
         jButton1.setFont(new java.awt.Font("新細明體", 0, 24)); // NOI18N
         jButton1.setText("Play");
