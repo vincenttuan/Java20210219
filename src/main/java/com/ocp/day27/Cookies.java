@@ -12,6 +12,12 @@ public class Cookies {
     }
     
     public synchronized void put(int n) {
+        if(!empty) {
+            try {
+                wait();
+            } catch (Exception e) {
+            }
+        }
         System.out.printf("主人放第 %d 塊餅乾\n", n);
     }
     
