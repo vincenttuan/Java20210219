@@ -16,6 +16,7 @@ public class Test_JsonThread {
         try {
             // 利用 get() 來得到工作回報
             String json = task.get(); // 取得 json 資料
+            System.out.println(json);
         } catch (Exception e) {
         }
     }
