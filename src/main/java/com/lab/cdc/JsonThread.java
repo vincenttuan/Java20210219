@@ -1,5 +1,6 @@
 package com.lab.cdc;
 
+import java.io.InputStreamReader;
 import java.net.URL;
 import java.util.Scanner;
 import java.util.concurrent.Callable;
@@ -17,7 +18,9 @@ public class JsonThread implements Callable<String>{
         URL url = new URL(path); // 建立 URL 物件
         // \A 這個 pattern 代表的是全部選擇
         // 透過 Scanner 可以將網路串流(openStream())變成字串
-        String json = new Scanner(url.openStream()).useDelimiter("\\A").next();
+        // 利用 InputStreamReader 將中文編碼(UTF-8)
+        InputStreamReader isr = new InputStreamReader(url.openStream(), "utf-8");
+        String json = new Scanner(isr).useDelimiter("\\A").next();
         return json;
     }
     
