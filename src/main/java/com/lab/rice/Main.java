@@ -8,5 +8,6 @@ public class Main {
         Stream.of(rices)
                 .filter(r -> r.get品名().contains("冠軍"))
                 .forEach(System.out::println);
+        
     }
 }
