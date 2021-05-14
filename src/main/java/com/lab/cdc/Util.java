@@ -2,6 +2,7 @@ package com.lab.cdc;
 
 // 工具類別
 
+import com.google.gson.Gson;
 import java.util.concurrent.FutureTask;
 
 public class Util {
@@ -17,7 +18,8 @@ public class Util {
             // 利用 get() 來得到工作回報
             String json = task.get(); // 取得 json 資料
             // 將 json 的字串轉成 CDC[] 陣列, 利用 Gson
-            
+            CDC[] cdcs = new Gson().fromJson(json, CDC[].class);
+            return cdcs;
         } catch (Exception e) {
         }
         return null;
