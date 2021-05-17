@@ -23,6 +23,11 @@ public class ExecutorDemo {
         Executor exec = new MyExecutor();
         exec.execute(r1);
         exec.execute(r2);
+        
+        Executor exec2 = (command) -> new Thread(command).start();
+        exec2.execute(r1);
+        exec2.execute(r2);
+        exec2.execute(() -> System.out.println("停電了"));
     }
     
 }
