@@ -25,6 +25,7 @@ public class ThreadPoolExecutorDemo {
             Future future = service.submit(new Lotto());
             System.out.println(future.get());
         }
+        System.out.println(Thread.activeCount());
         
         service.shutdown();
         
