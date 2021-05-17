@@ -12,7 +12,9 @@ class Lotto implements Callable<Integer> {
     @Override
     public Integer call() throws Exception {
         Thread.sleep(new Random().nextInt(1000));
-        return new Random().nextInt(100);
+        int num = new Random().nextInt(100);
+        //System.out.println(num);
+        return num;
     }
 }
 
