@@ -1,5 +1,7 @@
 package com.ocp.day29;
 
+import java.util.Arrays;
+import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.RecursiveTask;
 
 class SumTask extends RecursiveTask<Long> {
@@ -38,5 +40,12 @@ class SumTask extends RecursiveTask<Long> {
 }
 
 public class ForkJoinSum {
-    
+    public static void main(String[] args) {
+        long[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        System.out.println(Arrays.toString(numbers));
+        ForkJoinPool pool = new ForkJoinPool(4);
+        int from = 0, to = numbers.length;
+        long result = pool.invoke(new SumTask(numbers, from, to));
+        System.out.println(result);
+    }
 }
