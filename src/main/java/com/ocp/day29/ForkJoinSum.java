@@ -13,17 +13,24 @@ class SumTask extends RecursiveTask<Long> {
         this.numbers = numbers;
         this.from = from;
         this.to = to;
+        //System.out.printf("SumTask: from: %d to: %d -> %s\n",
+        //        from, to, Thread.currentThread().getName()
+        //);
     }
     
     @Override
     protected Long compute() {
+        //System.out.printf("compute: from: %d to: %d -> %s\n",
+        //        from, to, Thread.currentThread().getName()
+        //);
         // 當資料數量 <= 3 才會計算
         if(to - from <= 3) {
             long total = 0;
             for(int i = from ; i < to ; i++) {
                 total += numbers[i];
             }
-            System.out.printf("from: %d, to: %d, total: %d\n", from, to, total);
+            System.out.printf("from: %d, to: %d, total: %d -> %s\n", 
+                    from, to, total, Thread.currentThread().getName());
             return total;
         } else { // 將任務一分為二
             int middle = (from + to) / 2;
