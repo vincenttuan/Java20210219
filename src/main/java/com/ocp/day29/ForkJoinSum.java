@@ -23,7 +23,7 @@ class SumTask extends RecursiveTask<Long> {
             for(int i = from ; i < to ; i++) {
                 total += numbers[i];
             }
-            System.out.printf("from: %d, to: %d, total: %d\n", from, total, total);
+            System.out.printf("from: %d, to: %d, total: %d\n", from, to, total);
             return total;
         } else { // 將任務一分為二
             int middle = (from + to) / 2;
