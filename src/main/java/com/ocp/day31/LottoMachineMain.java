@@ -30,5 +30,6 @@ public class LottoMachineMain {
             } catch (Exception ex) {
             }
         });
+        service.shutdown();
     }
 }
