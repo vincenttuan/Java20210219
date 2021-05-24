@@ -2,6 +2,8 @@ package com.ocp.day31;
 
 import java.util.Date;
 import java.util.Random;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.stream.IntStream;
 
@@ -30,6 +32,14 @@ public class LottoLock implements Runnable {
         } finally {
             LOCK.unlock();
         }
+    }
+    
+    // 主程式
+    public static void main(String[] args) {
+        ExecutorService service = Executors.newCachedThreadPool();
+        service.execute(new LottoLock("Vincent"));
+        service.execute(new LottoLock("Anita"));
+        service.shutdown();
     }
     
 }
