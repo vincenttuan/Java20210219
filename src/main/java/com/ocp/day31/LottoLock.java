@@ -9,6 +9,7 @@ import java.util.stream.IntStream;
 
 public class LottoLock implements Runnable {
     private String userNme;
+    // 相當於 static synchronized
     private static final ReentrantLock LOCK = new ReentrantLock();
     public LottoLock(String userNme) {
         this.userNme = userNme;
