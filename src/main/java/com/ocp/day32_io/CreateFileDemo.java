@@ -21,7 +21,6 @@ public class CreateFileDemo {
             } catch (IOException e) {
                 System.out.println(e);
             }
-            
         }
     }
 }
