@@ -14,7 +14,7 @@ public class LottoMachine implements Callable<Lotto>{
     public Lotto call() throws Exception {
         Random r = new Random();
         Thread.sleep(r.nextInt(3000));
-        Lotto lotto = new Lotto(num, r.nextInt(10));
+        Lotto lotto = new Lotto(num, r.nextInt(10), Thread.currentThread().getName());
         return lotto;
     }
     
